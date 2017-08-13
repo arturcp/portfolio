@@ -1,0 +1,38 @@
+.page-right .pure-g [class*=pure-u] {
+  letter-spacing: 0;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.page-right .first-paragraph {
+	margin-top: 0;
+  color: #efc94c;
+  font-weight: bold;
+}
+
+.page-right p a {
+  color: #c6fff2;
+}
+
+.conference-icon {
+  float: left;
+  margin-right: 10px;
+}
+
+.conference-icon img {
+  width: 85px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+.margin-100 {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .margin-100 {
+    margin-left: 45px;
+  }
+}
