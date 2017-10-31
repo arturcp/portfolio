@@ -304,3 +304,13 @@ body:hover .designer {
   margin-top: 50px;
   display: inline-block;
 }
+
+.outer-calendar {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+  .outer-calendar {
+    margin: inherit;
+  }
+}

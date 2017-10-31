@@ -21,11 +21,10 @@
 }
 
 .conference-icon img {
-  width: 85px;
+  width: 82px;
   background-color: #fff;
   border-radius: 10px;
 }
-
 
 .margin-100 {
   margin-top: 100px;
@@ -42,5 +41,15 @@
 }
 
 .promo-image {
-  width: 500px;
+  width: 285px;
+}
+
+@media screen and (min-width: 600px) {
+  .promo-image {
+    width: 500px;
+  }
+
+  .conference-icon img {
+    width: 85px;
+  }
 }
