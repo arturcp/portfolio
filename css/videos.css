@@ -1,0 +1,10 @@
+#the-conf-video {
+  width: 98%;
+}
+
+@media screen and (min-width: 600px) {
+  #the-conf-video {
+    width: 100%;
+    height: 350px;
+  }
+}
