@@ -15,6 +15,10 @@
   color: #c6fff2;
 }
 
+.page-right p.first-paragraph a {
+  color: #efc94c;
+}
+
 .conference-icon {
   float: left;
   margin-right: 10px;
@@ -40,10 +44,6 @@
   }
 }
 
-.event-description-line {
-  color: #2ec5e8;
-}
-
 .promo-image {
   width: 230px;
 }
@@ -56,4 +56,8 @@
   .conference-icon img {
     width: 85px;
   }
+}
+
+.embeded-slides {
+  margin: 25px 5px;
 }
