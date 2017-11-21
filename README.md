@@ -1,3 +1,22 @@
+Configure your git
+==================
+
+Go to the terminal and, inside the folder of your project, run:
+
+```bash
+  git remote add live ssh://user@mydomain.com/var/repo/site.git
+```
+
+where `user` is your digital ocean user and `mydomain` is the ip address of
+your server or your domain.
+
+Then, to deploy your new code, do:
+
+```bash
+  git push live master
+```
+
+
 Blueprint: Split Layout
 =========
 
@@ -10,7 +29,7 @@ A template for a split layout with two sides. When clicking on a half in the ini
 The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration.
 Check out all of our Blueprints [here](http://tympanus.net/codrops/category/blueprints/)
 
-Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is". 
+Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is".
 
 Read more here: [License](http://tympanus.net/codrops/licensing/)
 
