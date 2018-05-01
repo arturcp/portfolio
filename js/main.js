@@ -22,3 +22,10 @@ var profile = getParameterByName('profile');
 if (profile) {
   selectTab(profile);
 }
+
+var myLightbox = GLightbox({
+  selector: 'glightbox',
+  onOpen: function() {
+    console.log('asdasdasdasd');
+  }
+});
