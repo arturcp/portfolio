@@ -24,8 +24,5 @@ if (profile) {
 }
 
 var myLightbox = GLightbox({
-  selector: 'glightbox',
-  onOpen: function() {
-    console.log('asdasdasdasd');
-  }
+  selector: 'glightbox'
 });
