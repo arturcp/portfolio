@@ -2,6 +2,7 @@
 
 ul.polaroids {
   display: inline-block;
+  width: 100%;
 }
 
 ul.polaroids a:after {
