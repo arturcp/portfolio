@@ -4,7 +4,7 @@ Configure your git
 Go to the terminal and, inside the folder of your project, run:
 
 ```bash
-  git remote add live ssh://user@mydomain.com/var/repo/site.git
+  git remote add live ssh://user@mydomain.com/var/repos/arturprado.git
 ```
 
 where `user` is your digital ocean user and `mydomain` is the ip address of
