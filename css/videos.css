@@ -1,9 +1,11 @@
-#the-conf-video {
+#the-conf-video,
+#pg-day-video {
   width: 98%;
 }
 
 @media screen and (min-width: 600px) {
-  #the-conf-video {
+  #the-conf-video,
+  #pg-day-video {
     width: 100%;
     height: 350px;
   }
