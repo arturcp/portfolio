@@ -11,6 +11,7 @@
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/calendar.css" />
 		<link rel="stylesheet" type="text/css" href="css/codrop-style.css" />
+		<link rel="stylesheet" type="text/css" href="css/collapsible.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/developer.css" />
 		<link rel="stylesheet" type="text/css" href="css/speaker.css" />
@@ -813,381 +814,425 @@
 
 				<div class="page page-left">
 					<div class="page-inner">
-
-						<section>
-							<h2>About</h2>
-							<section>
-								<a href="https://medium.com/@artur.prado" class="fa fa-medium" target="_blank"></a>
-								<a href="https://twitter.com/artur_caliendo" class="fa fa-twitter" target="_blank"></a>
-								<a href="https://www.facebook.com/artur.caliendoprado" class="fa fa-facebook" target="_blank"></a>
-								<a href="https://www.linkedin.com/in/artur-caliendo-prado-3a99ab102/" class="fa fa-linkedin" target="_blank"></a>
-							</section>
-							<q>
-								13 years eating, breathing and dreaming code. The first five years were dedicated to C# .Net,
-								and then I shifted my career to Ruby on Rails and have been flying on it since then. It's been an amazing ride.
-							</q>
-							<p>&nbsp;</p>
-						</section>
-
-						<section>
-							<h2>Skills</h2>
-
-							<!-- <span class="tooltip" data-tip="teste">teste teste</span> -->
-							<span class="tooltip" data-tip="Ruby on Rails">
-								<img src="/img/skills/ruby.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="C# .Net">
-								<img src="/img/skills/c_sharp.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="Jquery">
-								<img src="/img/skills/jquery.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="React">
-								<img src="/img/skills/react.svg" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="Git">
-								<img src="/img/skills/git.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="TDD">
-								<img src="/img/skills/tdd.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="Agile">
-								<img src="/img/skills/agile.gif" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="Redis">
-								<img src="/img/skills/redis.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="MongoDB">
-								<img src="/img/skills/mongodb.svg" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="Postgresql">
-								<img src="/img/skills/postgresql.svg" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="Postgis">
-								<img src="/img/skills/postgis.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="MySQL">
-								<img src="/img/skills/mysql.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="SQL Server">
-								<img src="/img/skills/sql.jpg" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="Memcached">
-								<img src="/img/skills/memcached.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="HTML">
-								<img src="/img/skills/html5.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="CSS">
-								<img src="/img/skills/css3.png" class="skill-icon">
-							</span>
-							<span class="tooltip" data-tip="Docker">
-								<img src="/img/skills/docker.png" class="skill-icon">
-							</span>
-							<p>&nbsp;</p>
-						</section>
-
-						<section>
-							<h2>Projects</h2>
-							<p>
-								Some of my best work are live on the Internet and most of them are public on my Github. Here are some of my favorites:
-							</p>
-
-							<h3>Social</h3>
-							<div class="pure-g">
-								<div class="pure-u-1-1 pure-u-md-1-2">
-									<section class="project-card" data-project="arsenal">
-										<h3 class="project-card__title">Mungazi</h3>
-										<hr />
-										<p class="project-card__urls">
-											<a href="http://ongmungazi.org" target="_blank">
-												<img src="img/projects/url.png" class="thumbnail" />
-											</a>
-											<a href="https://github.com/arturcp/mungazi" target="_blank">
-												<img src="img/projects/github.png" class="thumbnail" />
-											</a>
-										</p>
-										<p>
-											Created in 2015, <a href="https://www.facebook.com/ongmungazi/" target="_blank">Mungazi</a> is a non-profit and secular organization that aims to support refugees in their adaptation to a new reality.
-										</p>
-										<p>
-											In addition to supporting integration, it offers the opportunity to learn languages, with courses in French, English, Swahili, African culture and African cuisine, promoting the rescue and preservation of African history in Brazil.
-										</p>
+						<div class="wrap-collabsible">
+						  <input id="collapsible-about" class="toggle" type="checkbox" checked="checked">
+						  <label for="collapsible-about" class="lbl-toggle">About</label>
+						  <div class="collapsible-content">
+						    <div class="content-inner">
+									<section>
+										<a href="https://medium.com/@artur.prado" class="fa fa-medium" target="_blank"></a>
+										<a href="https://twitter.com/artur_caliendo" class="fa fa-twitter" target="_blank"></a>
+										<a href="https://www.facebook.com/artur.caliendoprado" class="fa fa-facebook" target="_blank"></a>
+										<a href="https://www.linkedin.com/in/artur-caliendo-prado-3a99ab102/" class="fa fa-linkedin" target="_blank"></a>
 									</section>
-								</div>
-								<div class="pure-u-1-1 pure-u-md-1-2">
-									<section class="project-card" data-project="arsenal">
-										<h3 class="project-card__title">Arsenal</h3>
-										<hr />
-										<p class="project-card__urls">
-											<a href="https://arsenal-demo.herokuapp.com" target="_blank">
-												<img src="img/projects/url.png" class="thumbnail" />
-											</a>
-											<a href="https://github.com/arturcp/arsenal" target="_blank">
-												<img src="img/projects/github.png" class="thumbnail" />
-											</a>
-										</p>
-										<p>
-											<a href="https://www.facebook.com/arsenaldaesperanca/about/" target="_blank">Arsenal da Esperança</a> is a nonprofit organization that opens its doors to 1200 men in a homeless situation.
-										</p>
-										<p>
-											They not only give them a place to sleep but receive them to teach, share and give back the dignity that was taken from them.
-										</p>
-										<p>
-											This project is a tool built from scratch and donated to the organization to let them manage campaigns to raise funds and receive donations.
-										</p>
-									</section>
+									<q>
+										13 years eating, breathing and dreaming code. The first five years were dedicated to C# .Net,
+										and then I shifted my career to Ruby on Rails and have been flying on it since then. It's been an amazing ride.
+									</q>
+									<p>&nbsp;</p>
+						    </div>
+						  </div>
+						</div>
+
+						<div class="wrap-collabsible">
+							<input id="collapsible-skills" class="toggle" type="checkbox">
+							<label for="collapsible-skills" class="lbl-toggle">Skills</label>
+							<div class="collapsible-content">
+								<div class="content-inner">
+									<p>
+										&nbsp;
+									</p>
+									<span class="tooltip" data-tip="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ruby on Rails">
+										<img src="/img/skills/ruby.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="C# .Net">
+										<img src="/img/skills/c_sharp.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="Jquery">
+										<img src="/img/skills/jquery.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="React">
+										<img src="/img/skills/react.svg" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="Git">
+										<img src="/img/skills/git.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="TDD">
+										<img src="/img/skills/tdd.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="Agile">
+										<img src="/img/skills/agile.gif" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="Redis">
+										<img src="/img/skills/redis.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="MongoDB">
+										<img src="/img/skills/mongodb.svg" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="Postgresql">
+										<img src="/img/skills/postgresql.svg" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="Postgis">
+										<img src="/img/skills/postgis.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="MySQL">
+										<img src="/img/skills/mysql.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="SQL Server">
+										<img src="/img/skills/sql.jpg" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="Memcached">
+										<img src="/img/skills/memcached.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="HTML">
+										<img src="/img/skills/html5.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="CSS">
+										<img src="/img/skills/css3.png" class="skill-icon">
+									</span>
+									<span class="tooltip" data-tip="Docker">
+										<img src="/img/skills/docker.png" class="skill-icon">
+									</span>
+									<p>&nbsp;</p>
 								</div>
 							</div>
+						</div>
 
-							<h3>General</h3>
-
-							<div class="pure-g">
-								<div class="pure-u-1-1 pure-u-md-1-2">
-									<section class="project-card" data-project="skoob">
-										<h3 class="project-card__title">Skoob Export Tool</h3>
-										<hr />
-										<p class="project-card__urls">
-											<a href="https://skoob-export.herokuapp.com/" target="_blank">
-												<img src="img/projects/url.png" class="thumbnail" />
-											</a>
-											<a href="https://github.com/arturcp/skoob-exporter" target="_blank">
-												<img src="img/projects/github.png" class="thumbnail" />
-											</a>
-										</p>
-										<p>
-											<a href="http://www.skoob.com.br" target="_blank">Skoob</a> is a social network for readers.
-											It has no public API and does not provide an easy way to export your books to other social networks like Goodreads.
-										</p>
-										<p>
-											To fix that, this project gets information about all your books and generates a CSV file in the format Goodreads expect, so you can easily import them.
-										</p>
-									</section>
-								</div>
-								<div class="pure-u-1-1 pure-u-md-1-2">
-									<section class="project-card" data-project="kindle-clippings-report">
-										<h3 class="project-card__title">Kindle clippings report</h3>
-										<hr />
-										<p class="project-card__urls">
-											<a href="https://github.com/arturcp/Kindle-Clippings-Report" target="_blank">
-												<img src="img/projects/github.png" class="thumbnail" />
-											</a>
-										</p>
-										<p>
-											<a href="https://www.amazon.com.br/dp/B0186FEYKW" target="_blank">Amazon Kindle</a> is an ebook reader that works with the e-ink techonology, providing a unique experience that other electronic devices don't have.
-										</p>
-										<p>
-											You have the option to highlight excerpts of texts and make notes, and it generates a .txt file inside the device. However, it is not easy to find notes and organize them. The idea is to extract data from the device and organize it by author and book.
-										</p>
-									</section>
-								</div>
+						<div class="wrap-collabsible">
+							<input id="collapsible-social-projects" class="toggle" type="checkbox">
+							<label for="collapsible-social-projects" class="lbl-toggle">Social projects</label>
+							<div class="collapsible-content">
+								<div class="content-inner">
+									<div class="pure-g">
+										<div class="pure-u-1-1 pure-u-md-1-2">
+											<section class="project-card" data-project="arsenal">
+												<h3 class="project-card__title">Mungazi</h3>
+												<hr />
+												<p class="project-card__urls">
+													<a href="http://ongmungazi.org" target="_blank">
+														<img src="img/projects/url.png" class="thumbnail" />
+													</a>
+													<a href="https://github.com/arturcp/mungazi" target="_blank">
+														<img src="img/projects/github.png" class="thumbnail" />
+													</a>
+												</p>
+												<p>
+													Created in 2015, <a href="https://www.facebook.com/ongmungazi/" target="_blank">Mungazi</a> is a non-profit and secular organization that aims to support refugees in their adaptation to a new reality.
+												</p>
+												<p>
+													In addition to supporting integration, it offers the opportunity to learn languages, with courses in French, English, Swahili, African culture and African cuisine, promoting the rescue and preservation of African history in Brazil.
+												</p>
+											</section>
+										</div>
+										<div class="pure-u-1-1 pure-u-md-1-2">
+											<section class="project-card" data-project="arsenal">
+												<h3 class="project-card__title">Arsenal</h3>
+												<hr />
+												<p class="project-card__urls">
+													<a href="https://arsenal-demo.herokuapp.com" target="_blank">
+														<img src="img/projects/url.png" class="thumbnail" />
+													</a>
+													<a href="https://github.com/arturcp/arsenal" target="_blank">
+														<img src="img/projects/github.png" class="thumbnail" />
+													</a>
+												</p>
+												<p>
+													<a href="https://www.facebook.com/arsenaldaesperanca/about/" target="_blank">Arsenal da Esperança</a> is a nonprofit organization that opens its doors to 1200 men in a homeless situation.
+												</p>
+												<p>
+													They not only give them a place to sleep but receive them to teach, share and give back the dignity that was taken from them.
+												</p>
+												<p>
+													This project is a tool built from scratch and donated to the organization to let them manage campaigns to raise funds and receive donations.
+												</p>
+											</section>
+										</div>
+									</div>
+							  </div>
 							</div>
+						</div>
 
-							<div class="pure-g">
-								<div class="pure-u-1-1 pure-u-md-1-2">
-									<section class="project-card" data-project="hackathon">
-										<h3 class="project-card__title">Hackathon bot</h3>
-										<hr />
-										<p class="project-card__urls">
-											<a href="https://hackaton-webhook.herokuapp.com/dashboard" target="_blank">
-												<img src="img/projects/url.png" class="thumbnail" />
-											</a>
-											<a href="https://github.com/arturcp/hackaton_collaboration_bot" target="_blank">
-												<img src="img/projects/github.png" class="thumbnail" />
-											</a>
+						<div class="wrap-collabsible">
+							<input id="collapsible-projects" class="toggle" type="checkbox">
+							<label for="collapsible-projects" class="lbl-toggle">General projects</label>
+							<div class="collapsible-content">
+								<div class="content-inner">
+									<p>
+										Some of my best work are live on the Internet and most of them are public on my Github. Here are some of my favorites:
+									</p>
+
+									<div class="pure-g">
+										<div class="pure-u-1-1 pure-u-md-1-2">
+											<section class="project-card" data-project="skoob">
+												<h3 class="project-card__title">Skoob Export Tool</h3>
+												<hr />
+												<p class="project-card__urls">
+													<a href="https://skoob-export.herokuapp.com/" target="_blank">
+														<img src="img/projects/url.png" class="thumbnail" />
+													</a>
+													<a href="https://github.com/arturcp/skoob-exporter" target="_blank">
+														<img src="img/projects/github.png" class="thumbnail" />
+													</a>
+												</p>
+												<p>
+													<a href="http://www.skoob.com.br" target="_blank">Skoob</a> is a social network for readers.
+													It has no public API and does not provide an easy way to export your books to other social networks like Goodreads.
+												</p>
+												<p>
+													To fix that, this project gets information about all your books and generates a CSV file in the format Goodreads expect, so you can easily import them.
+												</p>
+											</section>
+										</div>
+										<div class="pure-u-1-1 pure-u-md-1-2">
+											<section class="project-card" data-project="kindle-clippings-report">
+												<h3 class="project-card__title">Kindle clippings report</h3>
+												<hr />
+												<p class="project-card__urls">
+													<a href="https://github.com/arturcp/Kindle-Clippings-Report" target="_blank">
+														<img src="img/projects/github.png" class="thumbnail" />
+													</a>
+												</p>
+												<p>
+													<a href="https://www.amazon.com.br/dp/B0186FEYKW" target="_blank">Amazon Kindle</a> is an ebook reader that works with the e-ink techonology, providing a unique experience that other electronic devices don't have.
+												</p>
+												<p>
+													You have the option to highlight excerpts of texts and make notes, and it generates a .txt file inside the device. However, it is not easy to find notes and organize them. The idea is to extract data from the device and organize it by author and book.
+												</p>
+											</section>
+										</div>
+									</div>
+
+									<div class="pure-g">
+										<div class="pure-u-1-1 pure-u-md-1-2">
+											<section class="project-card" data-project="hackathon">
+												<h3 class="project-card__title">Hackathon bot</h3>
+												<hr />
+												<p class="project-card__urls">
+													<a href="https://hackaton-webhook.herokuapp.com/dashboard" target="_blank">
+														<img src="img/projects/url.png" class="thumbnail" />
+													</a>
+													<a href="https://github.com/arturcp/hackaton_collaboration_bot" target="_blank">
+														<img src="img/projects/github.png" class="thumbnail" />
+													</a>
+												</p>
+												<p>
+													in 2016, Youse did a <a href="https://labs.youse.com.br/hackathon-2016-um-teste-para-equipes-auto-gerenciaveis_159/" target="_blank">Hackathon</a>.
+													is the leading online source for information on business, economics, career, technology, entrepreneurship and personal finance in Brazil.
+												</p>
+											</section>
+										</div>
+										<div class="pure-u-1-1 pure-u-md-1-2">
+											<section class="project-card" data-project="Legacy of Joran">
+												<h3 class="project-card__title">Legacy of Joran</h3>
+												<hr />
+												<p class="project-card__urls">
+													<a href="http://joran.arenah.com.br" target="_blank">
+														<img src="img/projects/url.png" class="thumbnail" />
+													</a>
+												</p>
+												<p>
+													I love to read and write, and I wrote a medieval fiction book that I intend to publish soon. I have been working hard to make this dream come true.
+												</p>
+												<p>
+													This project is the draft of the book's website, there are lots of things to improve, but it is going in the right direction.
+												</p>
+											</section>
+										</div>
+									</div>
+
+									<div class="pure-g">
+										<div class="pure-u-1-1 pure-u-md-1-2">
+											<section class="project-card" data-project="arsenal">
+												<h3 class="project-card__title">TED Ed puzzles</h3>
+												<hr />
+												<p class="project-card__urls">
+													<a href="https://github.com/arturcp/puzzles" target="_blank">
+														<img src="img/projects/github.png" class="thumbnail" />
+													</a>
+												</p>
+												<p>
+													<a href="https://ed.ted.com/" target="_blank">TED Ed</a> is TED’s youth and education initiative. TED-Ed’s mission is to spark and celebrate the ideas of teachers and students around the world. Everything they do supports learning — from producing a growing library of original animated videos, to providing an international platform for teachers to create their own interactive lessons, to helping curious students around the globe bring TED to their schools and gain presentation literacy skills.
+												</p>
+											</section>
+										</div>
+
+										<div class="pure-u-1-1 pure-u-md-1-2">
+											<section class="project-card" data-project="exame">
+												<h3 class="project-card__title">Exame.com</h3>
+												<hr />
+												<p class="project-card__urls">
+													<a href="http://exame.abril.com.br/" target="_blank">
+														<img src="img/projects/url.png" class="thumbnail" />
+													</a>
+												</p>
+												<p>
+													<a href="http://exame.abril.com.br/" target="_blank">EXAME.com</a>
+													is the leading online source for information on business, economics, career, technology, entrepreneurship and personal finance in Brazil.
+												</p>
+												<p>
+													It is a high availability website. It reached 86 millions of page views and 5.8 millions of unique visitors per month.
+												</p>
+											</section>
+										</div>
+
+										<div class="pure-g">
+											<div class="pure-u-1-1 pure-u-md-1-2">
+												<section class="project-card" data-project="remembrall">
+													<h3 class="project-card__title">Remembrall</h3>
+													<hr />
+													<p class="project-card__urls">
+														<a href="https://youse-remembrall.herokuapp.com/" target="_blank">
+															<img src="img/projects/url.png" class="thumbnail" />
+														</a>
+														<a href="https://github.com/arturcp/remembrall" target="_blank">
+															<img src="img/projects/github.png" class="thumbnail" />
+														</a>
+													</p>
+													<p>
+														When the startup started to grow, I felt we were losing an incredible potential to share the knowledge that was spread among the team members. We tried to use a slack channel, then the Flipboard, but for no avail.
+													</p>
+													<p>
+														But people were sharing. They were sending links to slack, not on a channel dedicated to it, but to the channels where they belong. And so came the idea: why not build a slack bot that captured all the links and shared them in one place, easy to use and to find?
+													</p>
+												</section>
+											</div>
+
+											<div class="pure-u-1-1 pure-u-md-1-2">
+												<section class="project-card" data-project="arenah">
+													<h3 class="project-card__title">Arenah</h3>
+													<hr />
+													<p class="project-card__urls">
+														<a href="https://arenah-demo.herokuapp.com/" target="_blank">
+															<img src="img/projects/url.png" class="thumbnail" />
+														</a>
+														<a href="https://github.com/arturcp/arenah-rails" target="_blank">
+															<img src="img/projects/github.png" class="thumbnail" />
+														</a>
+													</p>
+													<p>
+														Arenah is an RPG engine to allow people to play online. It started many years ago on Orkut, moved to a PHP forum and then moved to its own, full-fledged website.
+													</p>
+													<p>
+														Version after version, it evolved to allow people to play in real time and to build the character sheets (including complex rules).
+													</p>
+													<p>I have videos of the website. Take a look at <a href="https://arenah-demo.herokuapp.com/tour/jogadores" target="_blank">the player's area</a> and <a href="https://arenah-demo.herokuapp.com/tour/mestres" target="_blank">the game master's area</a>.</p>
+												</section>
+											</div>
+										</div>
+									</div>
+								</div>
+						  </div>
+						</div>
+
+						<div class="wrap-collabsible">
+							<input id="collapsible-experience" class="toggle" type="checkbox">
+							<label for="collapsible-experience" class="lbl-toggle">Experience</label>
+							<div class="collapsible-content">
+								<div class="content-inner">
+									<p><i>To see the complete list of companies and roles check my <a href="https://www.facebook.com/artur.caliendoprado">Linkedin</a></i></p>
+
+									<section id="youse">
+										<h3><img src="/img/companies/youse.png" class="company-logo"/> Youse</h3>
+										<p>
+											Youse is a startup, a digital platform of Caixa Seguradora that aims to change how insurances are
+											sold in Brazil. We focus on innovation and base our operation on agile methodologies.
 										</p>
 										<p>
-											in 2016, Youse did a <a href="https://labs.youse.com.br/hackathon-2016-um-teste-para-equipes-auto-gerenciaveis_159/" target="_blank">Hackathon</a>.
-											is the leading online source for information on business, economics, career, technology, entrepreneurship and personal finance in Brazil.
+											Role: IT Specialist II
+										</p>
+										<p>Started in December 2015</p>
+										<p>
+											<a href="http://www.youse.com.br">Official website</a> | <a href="http://labs.youse.com.br">Technology blog</a>
+										</p>
+									</section>
+
+									<section id="abril">
+										<h3><img src="/img/companies/abril.jpg" class="company-logo"/> Editora Abril</h3>
+										<p>
+											Abril Mídia is the IT department of Abril Group, the largest magazine publisher in the country with over 300 different magazines published annually. It sells 180 million issues every year with 4 million subscriptions.
+										</p>
+										<p>
+											Role: Senior Web Developer
+										</p>
+										<p>From April 2008 to November 2015</p>
+										<p>
+											<a href="http://www.abril.com.br">Official website</a> | <a href="http://grupoabril.com.br/en">English website</a>
 										</p>
 									</section>
 								</div>
-								<div class="pure-u-1-1 pure-u-md-1-2">
-									<section class="project-card" data-project="Legacy of Joran">
-										<h3 class="project-card__title">Legacy of Joran</h3>
-										<hr />
-										<p class="project-card__urls">
-											<a href="http://joran.arenah.com.br" target="_blank">
-												<img src="img/projects/url.png" class="thumbnail" />
-											</a>
-										</p>
-										<p>
-											I love to read and write, and I wrote a medieval fiction book that I intend to publish soon. I have been working hard to make this dream come true.
-										</p>
-										<p>
-											This project is the draft of the book's website, there are lots of things to improve, but it is going in the right direction.
-										</p>
+						  </div>
+						</div>
+
+						<div class="wrap-collabsible">
+							<input id="collapsible-writing" class="toggle" type="checkbox">
+							<label for="collapsible-writing" class="lbl-toggle">Writing skills</label>
+							<div class="collapsible-content">
+								<div class="content-inner">
+									<p>Reading and writing are (a big) part of me. I tried to create <a href="http://teoriadobigbang.wordpress.com" target="_blank">a science blog</a> once, it went pretty well, and now I have a technology blog and I also wrote a book!</p>
+
+									<p>The book is a <a href="http://www.joran.arenah.com.br/" target="_blank">medieval fantasy </a> and it is not published yet. To make it happen is one of my main goals right now, so maybe I will soon have good news to share. I also wrote a small chronicle <a href="https://www.amazon.com.br/Conspira%C3%A7%C3%A3o-Artur-Caliendo-ebook/dp/B011EWJP8U" target="_blank">that can be purchased on Amazon</a>.</p>
+
+									<p>Once I was invited to write <a href="http://minhavidaliteraria.com.br/2012/07/14/post-surpresa-da-semana-da-literatura-fantastica-por-que-ficcao-por-artur-prado/" target="_blank">a post to a famous literature blog</a> called Minha Vida Literária and it was a huge success.</p>
+
+									<p>To complete the list of texts in Portuguese, I have been writing in <a href="https://labs.youse.com.br" target="_blank">Youse's technology blog</a>. Here is the list of my posts:</p>
+
+									<ul>
+										<li><a href="https://labs.youse.com.br/geolocalizacao-e-o-futuro_290/" target="_blank">Geolocation and the future</a></li>
+										<li><a href="https://labs.youse.com.br/rails-girls-2016_263/" target="_blank">Rails Girls 2016</a></li>
+										<li><a href="https://labs.youse.com.br/squads-tribos-e-o-nascimento-de-uma-nova-startup_190/" target="_blank">Squads, Tribes and the rise of a new startup</a></li>
+										<li><a href="https://labs.youse.com.br/hackathon-2016-um-teste-para-equipes-auto-gerenciaveis_159/" target="_blank">Hackathon 2016</a></li>
+										<li><a href="https://labs.youse.com.br/inovacao-no-dna_22/" target="_blank">Innovation in the DNA</a></li>
+									</ul>
+
+									<p>But I also write in English. I maintain <a href="https://medium.com/@artur.prado" target="_blank">my own blog on Medium</a> and, even though I have not been writing as much as I want, I like it very much. Here are my main articles:</p>
+
+									<ul>
+										<li><a href="https://www.pluralsight.com/guides/defining-roles-with-concerns" target="_blank">Defining roles with concerns</a></li>
+										<li><a href="https://medium.com/@artur.prado/geolocation-c4c1a76d11eb" target="_blank">Geolocation</a></li>
+										<li><a href="https://medium.com/@artur.prado/what-makes-a-team-tick-e3f97bfc0890" target="_blank">What makes a team tick?</a></li>
+										<li><a href="https://medium.com/@artur.prado/the-power-of-imagination-ff93fda4d9e3" target="_blank">The power of imagination</a></li>
+										<li><a href="https://medium.com/@artur.prado/technology-as-the-wheel-of-change-bb4cb8afa9dc" target="_blank">Technology as the wheel of change</a></li>
+										<li><a href="https://medium.com/@artur.prado/work-sustainable-hours-37b9e5b641f5" target="_blank">Work sustainable hours</a></li>
+										<li><a href="https://medium.com/@artur.prado/squads-tribes-and-the-rise-of-a-new-startup-7294a658e112" target="_blank">Squads, tribes and the rise of a new startup</a></li>
+									</ul>
+								</div>
+						  </div>
+						</div>
+
+						<div class="wrap-collabsible">
+							<input id="collapsible-languages" class="toggle" type="checkbox">
+							<label for="collapsible-languages" class="lbl-toggle">Languages</label>
+							<div class="collapsible-content">
+								<div class="content-inner">
+									<section class="wrap-for-tooltip">
+										<span class="tooltip" data-tip="Portuguese: native">
+											<img src="/img/flags/br.png" class="flag flag--spaced">
+										</span>
+										<span class="tooltip" data-tip="English: advanced">
+											<img src="/img/flags/us.png" class="flag flag--spaced">
+										</span>
+										<span class="tooltip" data-tip="Italian: advanced">
+											<img src="/img/flags/it.png" class="flag flag--spaced">
+										</span>
+										<span class="tooltip" data-tip="French: basic">
+											<img src="/img/flags/fr.png" class="flag flag--spaced">
+										</span>
 									</section>
 								</div>
-							</div>
+						  </div>
+						</div>
 
-							<div class="pure-g">
-								<div class="pure-u-1-1 pure-u-md-1-2">
-									<section class="project-card" data-project="arsenal">
-										<h3 class="project-card__title">TED Ed puzzles</h3>
-										<hr />
-										<p class="project-card__urls">
-											<a href="https://github.com/arturcp/puzzles" target="_blank">
-												<img src="img/projects/github.png" class="thumbnail" />
-											</a>
-										</p>
-										<p>
-											<a href="https://ed.ted.com/" target="_blank">TED Ed</a> is TED’s youth and education initiative. TED-Ed’s mission is to spark and celebrate the ideas of teachers and students around the world. Everything they do supports learning — from producing a growing library of original animated videos, to providing an international platform for teachers to create their own interactive lessons, to helping curious students around the globe bring TED to their schools and gain presentation literacy skills.
-										</p>
-									</section>
+
+						<!-- <div class="wrap-collabsible">
+							<input id="collapsible-" class="toggle" type="checkbox">
+							<label for="collapsible-" class="lbl-toggle"></label>
+							<div class="collapsible-content">
+								<div class="content-inner">
 								</div>
+						  </div>
+						</div> -->
 
-								<div class="pure-u-1-1 pure-u-md-1-2">
-									<section class="project-card" data-project="exame">
-										<h3 class="project-card__title">Exame.com</h3>
-										<hr />
-										<p class="project-card__urls">
-											<a href="http://exame.abril.com.br/" target="_blank">
-												<img src="img/projects/url.png" class="thumbnail" />
-											</a>
-										</p>
-										<p>
-											<a href="http://exame.abril.com.br/" target="_blank">EXAME.com</a>
-											is the leading online source for information on business, economics, career, technology, entrepreneurship and personal finance in Brazil.
-										</p>
-										<p>
-											It is a high availability website. It reached 86 millions of page views and 5.8 millions of unique visitors per month.
-										</p>
-									</section>
-								</div>
-							</div>
-						</section>
 
-						<section>
-							<h2>On going projects</h2>
-
-							<div class="pure-g">
-								<div class="pure-u-1-1 pure-u-md-1-2">
-									<section class="project-card" data-project="remembrall">
-										<h3 class="project-card__title">Remembrall</h3>
-										<hr />
-										<p class="project-card__urls">
-											<a href="https://youse-remembrall.herokuapp.com/" target="_blank">
-												<img src="img/projects/url.png" class="thumbnail" />
-											</a>
-											<a href="https://github.com/arturcp/remembrall" target="_blank">
-												<img src="img/projects/github.png" class="thumbnail" />
-											</a>
-										</p>
-										<p>
-											When the startup started to grow, I felt we were losing an incredible potential to share the knowledge that was spread among the team members. We tried to use a slack channel, then the Flipboard, but for no avail.
-										</p>
-										<p>
-											But people were sharing. They were sending links to slack, not on a channel dedicated to it, but to the channels where they belong. And so came the idea: why not build a slack bot that captured all the links and shared them in one place, easy to use and to find?
-										</p>
-									</section>
-								</div>
-								<div class="pure-u-1-1 pure-u-md-1-2">
-									<section class="project-card" data-project="arenah">
-										<h3 class="project-card__title">Arenah</h3>
-										<hr />
-										<p class="project-card__urls">
-											<a href="https://arenah-demo.herokuapp.com/" target="_blank">
-												<img src="img/projects/url.png" class="thumbnail" />
-											</a>
-											<a href="https://github.com/arturcp/arenah-rails" target="_blank">
-												<img src="img/projects/github.png" class="thumbnail" />
-											</a>
-										</p>
-										<p>
-											Arenah is an RPG engine to allow people to play online. It started many years ago on Orkut, moved to a PHP forum and then moved to its own, full-fledged website.
-										</p>
-										<p>
-											Version after version, it evolved to allow people to play in real time and to build the character sheets (including complex rules).
-										</p>
-										<p>I have videos of the website. Take a look at <a href="https://arenah-demo.herokuapp.com/tour/jogadores" target="_blank">the player's area</a> and <a href="https://arenah-demo.herokuapp.com/tour/mestres" target="_blank">the game master's area</a>.</p>
-									</section>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h2>Experience</h2>
-							<p><i>To see the complete list of companies and roles check my <a href="https://www.facebook.com/artur.caliendoprado">Linkedin</a></i></p>
-
-							<section id="youse">
-								<h3><img src="/img/companies/youse.png" class="company-logo"/> Youse</h3>
-								<p>
-									Youse is a startup, a digital platform of Caixa Seguradora that aims to change how insurances are
-									sold in Brazil. We focus on innovation and base our operation on agile methodologies.
-								</p>
-								<p>
-									Role: IT Specialist II
-								</p>
-								<p>Started in December 2015</p>
-								<p>
-									<a href="http://www.youse.com.br">Official website</a> | <a href="http://labs.youse.com.br">Technology blog</a>
-								</p>
-							</section>
-
-							<section id="abril">
-								<h3><img src="/img/companies/abril.jpg" class="company-logo"/> Editora Abril</h3>
-								<p>
-									Abril Mídia is the IT department of Abril Group, the largest magazine publisher in the country with over 300 different magazines published annually. It sells 180 million issues every year with 4 million subscriptions.
-								</p>
-								<p>
-									Role: Senior Web Developer
-								</p>
-								<p>From April 2008 to November 2015</p>
-								<p>
-									<a href="http://www.abril.com.br">Official website</a> | <a href="http://grupoabril.com.br/en">English website</a>
-								</p>
-							</section>
-						</section>
-
-						<section id="writing">
-							<h2>Writing skills</h2>
-
-							<p>Reading and writing are (a big) part of me. I tried to create <a href="http://teoriadobigbang.wordpress.com" target="_blank">a science blog</a> once, it went pretty well, and now I have a technology blog and I also wrote a book!</p>
-
-							<p>The book is a <a href="http://www.joran.arenah.com.br/" target="_blank">medieval fantasy </a> and it is not published yet. To make it happen is one of my main goals right now, so maybe I will soon have good news to share. I also wrote a small chronicle <a href="https://www.amazon.com.br/Conspira%C3%A7%C3%A3o-Artur-Caliendo-ebook/dp/B011EWJP8U" target="_blank">that can be purchased on Amazon</a>.</p>
-
-							<p>Once I was invited to write <a href="http://minhavidaliteraria.com.br/2012/07/14/post-surpresa-da-semana-da-literatura-fantastica-por-que-ficcao-por-artur-prado/" target="_blank">a post to a famous literature blog</a> called Minha Vida Literária and it was a huge success.</p>
-
-							<p>To complete the list of texts in Portuguese, I have been writing in <a href="https://labs.youse.com.br" target="_blank">Youse's technology blog</a>. Here is the list of my posts:</p>
-
-							<ul>
-								<li><a href="https://labs.youse.com.br/geolocalizacao-e-o-futuro_290/" target="_blank">Geolocation and the future</a></li>
-								<li><a href="https://labs.youse.com.br/rails-girls-2016_263/" target="_blank">Rails Girls 2016</a></li>
-								<li><a href="https://labs.youse.com.br/squads-tribos-e-o-nascimento-de-uma-nova-startup_190/" target="_blank">Squads, Tribes and the rise of a new startup</a></li>
-								<li><a href="https://labs.youse.com.br/hackathon-2016-um-teste-para-equipes-auto-gerenciaveis_159/" target="_blank">Hackathon 2016</a></li>
-								<li><a href="https://labs.youse.com.br/inovacao-no-dna_22/" target="_blank">Innovation in the DNA</a></li>
-							</ul>
-
-							<p>But I also write in English. I maintain <a href="https://medium.com/@artur.prado" target="_blank">my own blog on Medium</a> and, even though I have not been writing as much as I want, I like it very much. Here are my main articles:</p>
-
-							<ul>
-								<li><a href="https://www.pluralsight.com/guides/defining-roles-with-concerns" target="_blank">Defining roles with concerns</a></li>
-								<li><a href="https://medium.com/@artur.prado/geolocation-c4c1a76d11eb" target="_blank">Geolocation</a></li>
-								<li><a href="https://medium.com/@artur.prado/what-makes-a-team-tick-e3f97bfc0890" target="_blank">What makes a team tick?</a></li>
-								<li><a href="https://medium.com/@artur.prado/the-power-of-imagination-ff93fda4d9e3" target="_blank">The power of imagination</a></li>
-								<li><a href="https://medium.com/@artur.prado/technology-as-the-wheel-of-change-bb4cb8afa9dc" target="_blank">Technology as the wheel of change</a></li>
-								<li><a href="https://medium.com/@artur.prado/work-sustainable-hours-37b9e5b641f5" target="_blank">Work sustainable hours</a></li>
-								<li><a href="https://medium.com/@artur.prado/squads-tribes-and-the-rise-of-a-new-startup-7294a658e112" target="_blank">Squads, tribes and the rise of a new startup</a></li>
-							</ul>
-						</section>
-
-						<section>
-							<h2>Languages</h2>
-
-							<span class="tooltip" data-tip="Portuguese: native">
-								<img src="/img/flags/br.png" class="flag flag--spaced">
-							</span>
-							<span class="tooltip" data-tip="English: advanced">
-								<img src="/img/flags/us.png" class="flag flag--spaced">
-							</span>
-							<span class="tooltip" data-tip="Italian: advanced">
-								<img src="/img/flags/it.png" class="flag flag--spaced">
-							</span>
-							<span class="tooltip" data-tip="French: basic">
-								<img src="/img/flags/fr.png" class="flag flag--spaced">
-							</span>
-						</section>
 					</div>
 				</div>
 
