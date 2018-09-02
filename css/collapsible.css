@@ -12,6 +12,7 @@ input[type='checkbox'] {
   display: block;
 
   padding: 1rem;
+  margin-bottom: 10px;
 
   cursor: pointer;
 
