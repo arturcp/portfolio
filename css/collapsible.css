@@ -61,3 +61,14 @@ input[type='checkbox'] {
   border-bottom-right-radius: 7px;
   padding: .5rem 1rem;
 }
+
+
+@media screen and (max-width: 600px) {
+  .lbl-toggle {
+    font-size: 20px;
+  }
+
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 4000px;
+  }
+}

@@ -96,3 +96,47 @@
 #writing ul li {
 	font-weight: 100;
 }
+
+.teaching-course .fa {
+	color: #000;
+}
+
+.teaching-course h3 {
+	margin-bottom: 0;
+}
+
+.teaching-course h4 {
+	margin: 0;
+	padding: 0;
+	text-indent: 73px;
+	font-size: 15px;
+	font-weight: 200;
+}
+
+.teaching-course p {
+	padding-left: 70px;
+}
+
+.teaching-course ul {
+	padding-left: 95px;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+	.teaching-course h4 {
+		text-indent: 0;
+  }
+
+	.teaching-course p {
+		padding-left: 10px;
+	}
+
+	.teaching-course ul {
+		padding-left: 35px;
+	}
+
+	.flag {
+		width: 30px;
+		height: 20px;
+	}
+}
