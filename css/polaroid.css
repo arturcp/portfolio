@@ -5,6 +5,13 @@ ul.polaroids {
   width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  ul.polaroids {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
 ul.polaroids a:after {
   content: attr(title);
 }

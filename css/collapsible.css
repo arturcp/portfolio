@@ -49,7 +49,7 @@ input[type='checkbox'] {
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 4000px;
+  max-height: 8000px;
 }
 
 .toggle:checked + .lbl-toggle {
@@ -63,13 +63,17 @@ input[type='checkbox'] {
   padding: .5rem 1rem;
 }
 
-
 @media screen and (max-width: 600px) {
+  .collapsible-content .content-inner {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
   .lbl-toggle {
     font-size: 20px;
   }
 
   .toggle:checked + .lbl-toggle + .collapsible-content {
-    max-height: 4000px;
+    max-height: 8000px;
   }
 }
