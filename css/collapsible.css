@@ -2,6 +2,7 @@
 
 .wrap-collabsible {
   margin-bottom: 5px;
+  position: relative;
 }
 
 input[type='checkbox'] {

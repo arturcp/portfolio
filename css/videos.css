@@ -1,12 +1,21 @@
-#the-conf-video,
-#pg-day-video {
+.media-inside {
+  position: absolute;
+  right: 30px;
+  top: 17px;
+}
+
+.talk-video {
   width: 98%;
 }
 
 @media screen and (min-width: 600px) {
-  #the-conf-video,
-  #pg-day-video {
+  .talk-video {
     width: 100%;
     height: 350px;
   }
+}
+
+.media-inside .fa {
+  width: 24px;
+  padding: 20px 15px;;
 }
