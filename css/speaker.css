@@ -61,3 +61,8 @@
 .embeded-slides {
   margin: 25px 5px;
 }
+
+.event .pure-g .pure-u-lg-4-5,
+.content-inner .pure-g .pure-u-lg-4-5 {
+  padding-left: 20px;
+}
