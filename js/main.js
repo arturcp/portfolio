@@ -26,3 +26,12 @@ if (profile) {
 var myLightbox = GLightbox({
   selector: 'glightbox'
 });
+
+var avatars = document.querySelectorAll('[data-avatar-trigger]');
+avatars.forEach(function(avatar) {
+  var elementToTrigger = avatar.getAttribute('data-avatar-trigger');
+  avatar.addEventListener('click', function(event) {
+    console.log('.' + elementToTrigger);
+    document.querySelector('.' + elementToTrigger).click();
+  });
+});
