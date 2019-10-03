@@ -31,7 +31,20 @@ var avatars = document.querySelectorAll('[data-avatar-trigger]');
 avatars.forEach(function(avatar) {
   var elementToTrigger = avatar.getAttribute('data-avatar-trigger');
   avatar.addEventListener('click', function(event) {
-    console.log('.' + elementToTrigger);
-    document.querySelector('.' + elementToTrigger).click();
+    var splitLayout = document.getElementById('splitlayout');
+
+    if (!splitLayout.classList.contains('reset-layout')) {
+      if (splitLayout.classList.contains('open-left')) {
+        splitLayout.classList.remove('open-left');
+        splitLayout.classList.add('close-left');
+        event.preventDefault();
+        event.stopPropagation();
+      } else if (splitLayout.classList.contains('open-right')) {
+        splitLayout.classList.remove('open-right');
+        splitLayout.classList.add('close-right');
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    }
   });
 });
